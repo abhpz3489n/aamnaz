@@ -1,0 +1,1261 @@
+<!DOCTYPE html>
+<html>
+ <title>Welcome To Aamnaz Tailoring Shop</title><link href="Favicon.png" type="image" rel="icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-sidenav a {padding:10px;
+    
+    
+     text-decoration: none;
+  font-size: 25px;
+  
+    
+    
+    }
+    
+    
+    
+    
+    div.img {
+    border: 1px solid #ccc;
+}
+
+div.img:hover {
+    border: 1px solid #777;
+}
+
+div.img img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+    
+    
+    hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 5px;
+        width: 50%
+} 
+    
+    
+<!-- Design Portfolio -->
+    
+    
+
+
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+
+
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  display: none; /* Hide all elements by default */
+}
+    
+    
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+ 
+    
+    
+    
+    
+    
+   .w3-myfont {
+  font-family: "blackchancery", cursive, sans-serif;
+}   
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</style>
+ <body bgcolor="#FAFAD2">
+
+<!-- Sidenav (hidden by default) -->
+<nav class="w3-sidenav w3-card-2 w3-top w3-animate-left w3-dark-grey w3-overlay w3-bar-block" style="display:none;z-index:2;width:20%;min-width:300px " id="mySidenav">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-closenav">Close Menu</a>
+  <a href="http://www.aamnaztailor.com" onclick="w3_close()">Home</a>
+  <a href="Uniforms.html" target="_blank" onclick="w3_close()">Uniforms</a>
+  <a href="Women.html" target="_blank" onclick="w3_close()">Women</a>
+  <a href="About%20Us.html" onclick="w3_close()">About Us</a>
+  <a href="Contact%20Us.html" onclick="w3_close()">Contact Us</a>
+  <a href="FAQS.html" onclick="w3_close()">FAQS</a>
+  <a href="Design%20Portfolio.html" target="_blank">Design Portfolio</a>
+  <a href="https://docs.google.com/forms/d/17iBKGJVQS-aWH7p4BypS6y_vlwsJbW416WTOphOLWjM/edit" target="_blank" onclick="w3_close()">Feedback</a>    
+</nav>
+
+<!-- Top menu -->
+<div class="w3-blue">
+  <div class="w3-blue w3-xlarge w3-padding-xlarge" style="max-width:1200px;margin:auto">
+     <div class="w3-opennav w3-left w3-hover-text-grey" onclick="w3_open()"><img src="Untitled.png"> </div>
+    <div class="w3-right w3-blue"></div>
+    <div class="w3-center w3-myfont">Aamnaz Tailor</div>
+       
+  </div>
+</div>
+  <!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+     <font size="5" color="white">
+             <marquee id="m1" height="30" bgcolor="dodgerblue" align="middle" onmouseover="this.stop()" onmouseout="this.start()"> 50% OFF on your every 5th same garment stitched by Aamnaz Tailor (Only for Men) </marquee>
+          </font>
+    <br>
+     
+     
+    
+    
+    <div class="main">
+
+
+<h2>Design Portfolio</h2>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('coat')"> Coat </button>
+  <button class="btn" onclick="filterSelection('Waist')"> Waistcoat </button>
+  <button class="btn" onclick="filterSelection('Sherwani')"> Sherwani </button>
+  <button class="btn" onclick="filterSelection('Shirt')"> Shirt </button>   
+  <button class="btn" onclick="filterSelection('Kurta')"> Kurta </button>
+  <button class="btn" onclick="filterSelection('Uniform')"> Uniform </button>
+    
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column coat">
+    <div class="content">
+      <img src="CT01.jpg" alt="CT01" style="width:100%">
+    <center>  <h4>CT01</h4>
+        <p></p></center>
+    </div>
+  </div>
+  <div class="column coat">
+    <div class="content">
+    <img src="CT02.jpg" alt="CT02" style="width:100%">
+     <center> <h4>CT02</h4>
+      <p></p></center>
+    </div>
+  </div>
+  <div class="column coat">
+    <div class="content">
+    <img src="CT03.jpg" alt="CT03" style="width:100%">
+     <center> <h4>CT03</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT04.jpg" alt="CT04" style="width:100%">
+     <center> <h4>CT04</h4>
+      <p></p></center>
+    </div>
+  </div>
+    <div class="column coat">
+    <div class="content">
+    <img src="CT05.jpg" alt="CT05" style="width:100%">
+     <center> <h4>CT05</h4>
+      <p></p></center>
+    </div>
+  </div>
+    <div class="column coat">
+    <div class="content">
+    <img src="CT06.jpg" alt="CT06" style="width:100%">
+     <center> <h4>CT06</h4>
+      <p></p></center>
+    </div>
+  </div>
+    <div class="column coat">
+    <div class="content">
+    <img src="CT07.jpg" alt="CT07" style="width:100%">
+     <center> <h4>CT07</h4>
+      <p></p></center>
+    </div>
+  </div>
+    <div class="column coat">
+    <div class="content">
+    <img src="CT08.jpg" alt="CT08" style="width:100%">
+     <center> <h4>CT08</h4>
+      <p></p></center>
+    </div>
+  </div>
+    <div class="column coat">
+    <div class="content">
+    <img src="CT09.jpg" alt="CT09" style="width:100%">
+     <center> <h4>CT09</h4>
+      <p></p></center>
+    </div>
+  </div>
+    <div class="column coat">
+    <div class="content">
+    <img src="CT10.jpg" alt="CT10" style="width:100%">
+     <center> <h4>CT10</h4>
+      <p></p></center>
+    </div>
+  </div>
+    <div class="column coat">
+    <div class="content">
+    <img src="CT11.jpg" alt="CT11" style="width:100%">
+     <center> <h4>CT11</h4>
+      <p></p></center>
+    </div>
+  </div>
+    <div class="column coat">
+    <div class="content">
+    <img src="CT12.jpg" alt="CT12" style="width:100%">
+     <center> <h4>CT12</h4>
+      <p></p></center>
+    </div>
+  </div>
+    <div class="column coat">
+    <div class="content">
+    <img src="CT13.jpg" alt="CT13" style="width:100%">
+     <center> <h4>CT13</h4>
+      <p></p></center>
+    </div>
+  </div>
+    <div class="column coat">
+    <div class="content">
+    <img src="CT14.jpg" alt="CT14" style="width:100%">
+     <center> <h4>CT14</h4>
+      <p></p></center>
+    </div>
+  </div>
+    <div class="column coat">
+    <div class="content">
+    <img src="CT15.jpg" alt="CT15" style="width:100%">
+     <center> <h4>CT15</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT16.jpg" alt="CT16" style="width:100%">
+     <center> <h4>CT16</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT17.jpg" alt="CT17" style="width:100%">
+     <center> <h4>CT17</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT18.jpg" alt="CT18" style="width:100%">
+     <center> <h4>CT18</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT19.jpg" alt="CT19" style="width:100%">
+     <center> <h4>CT19</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT20.jpg" alt="CT20" style="width:100%">
+     <center> <h4>CT20</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT21.jpg" alt="CT21" style="width:100%">
+     <center> <h4>CT21</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT22.jpg" alt="CT22" style="width:100%">
+     <center> <h4>CT22</h4>
+      <p></p></center>
+    </div>
+  </div>
+      <div class="column coat">
+    <div class="content">
+    <img src="CT23.jpg" alt="CT23" style="width:100%">
+     <center> <h4>CT23</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT24.jpg" alt="CT24" style="width:100%">
+     <center> <h4>CT24</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT25.jpg" alt="CT25" style="width:100%">
+     <center> <h4>CT25</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT26.jpg" alt="CT26" style="width:100%">
+     <center> <h4>CT26</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT27.jpg" alt="CT27" style="width:100%">
+     <center> <h4>CT27</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT28.jpg" alt="CT28" style="width:100%">
+     <center> <h4>CT28</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT29.jpg" alt="CT29" style="width:100%">
+     <center> <h4>CT29</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT30.jpg" alt="CT30" style="width:100%">
+     <center> <h4>CT30</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT31.jpg" alt="CT31" style="width:100%">
+     <center> <h4>CT31</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT32.jpg" alt="CT32" style="width:100%">
+     <center> <h4>CT32</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT33.jpg" alt="CT33" style="width:100%">
+     <center> <h4>CT33</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT34.jpg" alt="CT34" style="width:100%">
+     <center> <h4>CT34</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT35.jpg" alt="CT35" style="width:100%">
+     <center> <h4>CT35</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT36.jpg" alt="CT36" style="width:100%">
+     <center> <h4>CT36</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT37.jpg" alt="CT37" style="width:100%">
+     <center> <h4>CT37</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT38.jpg" alt="CT38" style="width:100%">
+     <center> <h4>CT38</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT39.jpg" alt="CT38" style="width:100%">
+     <center> <h4>CT39</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT40.jpg" alt="CT38" style="width:100%">
+     <center> <h4>CT40</h4>
+      <p></p></center>
+    </div>
+  </div>
+    <div class="column coat">
+    <div class="content">
+    <img src="CT41.jpg" alt="CT38" style="width:100%">
+     <center> <h4>CT41</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT42.jpg" alt="CT38" style="width:100%">
+     <center> <h4>CT42</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT43.jpg" alt="CT38" style="width:100%">
+     <center> <h4>CT43</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT44.jpg" alt="CT38" style="width:100%">
+     <center> <h4>CT44</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT45.png" alt="CT38" style="width:100%">
+     <center> <h4>CT45</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT46.jpg" alt="CT38" style="width:100%">
+     <center> <h4>CT46</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT47.png" alt="CT38" style="width:100%">
+     <center> <h4>CT47</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT48.jpg" alt="CT38" style="width:100%">
+     <center> <h4>CT48</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT49.jpg" alt="CT38" style="width:100%">
+     <center> <h4>CT49</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT50.jpg" alt="CT38" style="width:100%">
+     <center> <h4>CT50</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT51.jpg" alt="CT38" style="width:100%">
+     <center> <h4>CT51</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT52.jpg" alt="CT38" style="width:100%">
+     <center> <h4>CT52</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT53.jpg" alt="CT38" style="width:100%">
+     <center> <h4>CT53</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT54.jpg" alt="CT38" style="width:100%">
+     <center> <h4>CT54</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT55.jpg" alt="CT38" style="width:100%">
+     <center> <h4>CT55</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT56.jpg" alt="CT38" style="width:100%">
+     <center> <h4>CT56</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT57.jpg" alt="CT38" style="width:100%">
+     <center> <h4>CT57</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT58.jpg" alt="CT38" style="width:100%">
+     <center> <h4>CT58</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT59.jpg" alt="CT38" style="width:100%">
+     <center> <h4>CT59</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT60.jpg" alt="CT38" style="width:100%">
+     <center> <h4>CT60</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT61.jpg" alt="CT38" style="width:100%">
+     <center> <h4>CT61</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT62.jpg" alt="CT38" style="width:100%">
+     <center> <h4>CT62</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT63.jpg" alt="CT38" style="width:100%">
+     <center> <h4>CT63</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT64.jpg" alt="CT38" style="width:100%">
+     <center> <h4>CT64</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT65.jpg" alt="CT38" style="width:100%">
+     <center> <h4>CT65</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT66.jpg" alt="CT38" style="width:100%">
+     <center> <h4>CT66</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT67.jpg" alt="CT38" style="width:100%">
+     <center> <h4>CT67</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT68.jpg" alt="CT38" style="width:100%">
+     <center> <h4>CT68</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT69.jpg" alt="CT38" style="width:100%">
+     <center> <h4>CT69</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT70.jpg" alt="CT38" style="width:100%">
+     <center> <h4>CT70</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT71.jpg" alt="CT38" style="width:100%">
+     <center> <h4>CT71</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT72.jpg" alt="CT38" style="width:100%">
+     <center> <h4>CT72</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT73.jpg" alt="CT38" style="width:100%">
+     <center> <h4>CT73</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT74.jpg" alt="CT38" style="width:100%">
+     <center> <h4>CT74</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT75.jpg" alt="CT38" style="width:100%">
+     <center> <h4>CT75</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT76.jpg" alt="CT38" style="width:100%">
+     <center> <h4>CT76</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT77.jpg" alt="CT38" style="width:100%">
+     <center> <h4>CT77</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT78.jpg" alt="CT38" style="width:100%">
+     <center> <h4>CT78</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT79.jpg" alt="CT38" style="width:100%">
+     <center> <h4>CT79</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT80.jpg" alt="CT38" style="width:100%">
+     <center> <h4>CT80</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT81.jpg" alt="CT38" style="width:100%">
+     <center> <h4>CT81</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT82.jpg" alt="CT38" style="width:100%">
+     <center> <h4>CT82</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT83.jpg" alt="CT38" style="width:100%">
+     <center> <h4>CT83</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT84.png" alt="CT38" style="width:100%">
+     <center> <h4>CT84</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT85.jpg" alt="CT38" style="width:100%">
+     <center> <h4>CT85</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT86.jpg" alt="CT38" style="width:100%">
+     <center> <h4>CT86</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT87.jpg" alt="CT38" style="width:100%">
+     <center> <h4>CT87</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT88.jpg" alt="CT38" style="width:100%">
+     <center> <h4>CT88</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT89.jpg" alt="CT38" style="width:100%">
+     <center> <h4>CT89</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column coat">
+    <div class="content">
+    <img src="CT90.jpg" alt="CT38" style="width:100%">
+     <center> <h4>CT90</h4>
+      <p></p></center>
+    </div>
+  </div>
+    
+    
+    
+    
+    
+    
+    
+     <div class="column Waist">
+    <div class="content">
+      <img src="WC01.jpg" alt="WC01" style="width:100%">
+     <center> <h4>WC01</h4>
+      <p></p></center>
+    </div>
+  </div>
+  <div class="column Waist">
+    <div class="content">
+    <img src="WC02.jpg" alt="WC02" style="width:100%">
+     <center> <h4>WC02</h4>
+      <p></p></center>
+    </div>
+  </div>
+  <div class="column Waist">
+    <div class="content">
+    <img src="WC03.jpg" alt="WC03" style="width:100%">
+     <center> <h4>WC03</h4>
+      <p></p></center>
+    </div>
+  </div>
+    <div class="column Waist">
+    <div class="content">
+    <img src="WC04.jpg" alt="WC04" style="width:100%">
+     <center> <h4>WC04</h4>
+      <p></p></center>
+    </div>
+  </div>
+    <div class="column Waist">
+    <div class="content">
+    <img src="WC05.jpg" alt="WC05" style="width:100%">
+     <center> <h4>WC05</h4>
+      <p></p></center>
+    </div>
+  </div>
+    
+    
+    
+    
+    
+    
+    
+<div class="column Sherwani">
+    <div class="content">
+      <img src="SW01.jpg" alt="SW01" style="width:100%">
+     <center> <h4>SW01</h4>
+      <p></p></center>
+    </div>
+  </div>
+  <div class="column Sherwani">
+    <div class="content">
+    <img src="SW02.jpg" alt="SW02" style="width:100%">
+      <center><h4>SW02</h4>
+      <p></p></center>
+    </div>
+  </div>
+  <div class="column Sherwani">
+    <div class="content">
+    <img src="SW03.jpg" alt="SW03" style="width:100%">
+     <center> <h4>SW03</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column Sherwani">
+    <div class="content">
+    <img src="SW04.jpg" alt="SW03" style="width:100%">
+     <center> <h4>SW04</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column Sherwani">
+    <div class="content">
+    <img src="SW05.jpg" alt="SW03" style="width:100%">
+     <center> <h4>SW05</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column Sherwani">
+    <div class="content">
+    <img src="SW06.jpg" alt="SW03" style="width:100%">
+     <center> <h4>SW06</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column Sherwani">
+    <div class="content">
+    <img src="SW07.jpg" alt="SW03" style="width:100%">
+     <center> <h4>SW07</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column Sherwani">
+    <div class="content">
+    <img src="SW08.jpeg" alt="SW03" style="width:100%">
+     <center> <h4>SW08</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column Sherwani">
+    <div class="content">
+    <img src="SW09.jpg" alt="SW03" style="width:100%">
+     <center> <h4>SW09</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column Sherwani">
+    <div class="content">
+    <img src="SW10.jpg" alt="SW03" style="width:100%">
+     <center> <h4>SW10</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column Sherwani">
+    <div class="content">
+    <img src="SW11.jpg" alt="SW03" style="width:100%">
+     <center> <h4>SW11</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column Sherwani">
+    <div class="content">
+    <img src="SW12.jpg" alt="SW03" style="width:100%">
+     <center> <h4>SW12</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column Sherwani">
+    <div class="content">
+    <img src="SW13.png" alt="SW03" style="width:100%">
+     <center> <h4>SW13</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column Sherwani">
+    <div class="content">
+    <img src="SW14.jpg" alt="SW03" style="width:100%">
+     <center> <h4>SW14</h4>
+      <p></p></center>
+    </div>
+  </div>
+    
+    
+    
+    
+    
+    
+    
+    <div class="column Kurta">
+    <div class="content">
+    <img src="KT01.jpg" alt="KT01" style="width:100%">
+     <center> <h4>KT01</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column Kurta">
+    <div class="content">
+    <img src="KT02.png" alt="KT02" style="width:100%">
+     <center> <h4>KT02</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column Kurta">
+    <div class="content">
+    <img src="KT03.jpg" alt="KT03" style="width:100%">
+     <center> <h4>KT03</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column Kurta">
+    <div class="content">
+    <img src="KT04.jpg" alt="KT04" style="width:100%">
+     <center> <h4>KT04</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column Kurta">
+    <div class="content">
+    <img src="KT05.jpg" alt="KT05" style="width:100%">
+     <center> <h4>KT05</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column Kurta">
+    <div class="content">
+    <img src="KT06.jpg" alt="SW03" style="width:100%">
+     <center> <h4>KT06</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column Kurta">
+    <div class="content">
+    <img src="KT07.jpg" alt="SW03" style="width:100%">
+     <center> <h4>KT07</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column Kurta">
+    <div class="content">
+    <img src="KT08.jpg" alt="SW03" style="width:100%">
+     <center> <h4>KT08</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column Kurta">
+    <div class="content">
+    <img src="KT09.jpg" alt="SW03" style="width:100%">
+     <center> <h4>KT09</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column Kurta">
+    <div class="content">
+    <img src="KT10.jpg" alt="SW03" style="width:100%">
+     <center> <h4>KT10</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column Kurta">
+    <div class="content">
+    <img src="KT11.png" alt="SW03" style="width:100%">
+     <center> <h4>KT11</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column Kurta">
+    <div class="content">
+    <img src="KT12.jpg" alt="SW03" style="width:100%">
+     <center> <h4>KT12</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column Kurta">
+    <div class="content">
+    <img src="KT13.jpg" alt="SW03" style="width:100%">
+     <center> <h4>KT13</h4>
+      <p></p></center>
+    </div>
+  </div>
+     <div class="column Kurta">
+    <div class="content">
+    <img src="KT14.jpg" alt="SW03" style="width:100%">
+     <center> <h4>KT14</h4>
+      <p></p></center>
+    </div>
+  </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     
+     
+ 
+    
+   
+
+         
+       
+    
+    
+    
+    
+   
+    
+ 
+     <footer class="w3-container w3-green w3-center w3-margin-top">
+  <p>Find me on social media.</p>
+       
+ <a target="_blank" href="https://www.facebook.com/AamnazTailor/">     <i class="fa fa-facebook-official w3-hover-text-indigo w3-large"></i> </a> 
+ <a target="_blank" href="https://www.instagram.com/aamnaztailor05/">  <i class="fa fa-instagram w3-hover-text-purple w3-large"></i>  </a>  
+ <a target="_blank" href="https://in.pinterest.com/aamnaztailor0178/"> <i class="fa fa-pinterest-p w3-hover-text-red w3-large"></i>  </a>  
+ <a target="_blank" href="https://twitter.com/mdzaffar05">             <i class="fa fa-twitter w3-hover-text-light-blue w3-large"></i></a>
+ <a target="_blank" href="https://www.youtube.com/channel/UCFeNTMiU_v3cdF3n5o_tuQg"> <i class="fa fa-youtube w3-hover-text-red w3-large"></i></a> <a target="_blank" href="https://www.linkedin.com/company/aamnaz-tailor/?viewAsMember=true"><i class="fa fa-linkedin w3-hover-text-indigo                                                                                                                          w3-large"></i></a>
+       
+</footer>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidenav
+function w3_open() {
+    document.getElementById("mySidenav").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidenav").style.display = "none";
+}
+</script>
+
+</body>
+</html>
